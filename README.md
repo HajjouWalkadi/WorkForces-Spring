@@ -31,12 +31,6 @@ Advantages:
 - Controlling the life cycle of the bean (object)
 - It uses (BeansFactory & ApplicationContext Interfaces) as IoC Containers
 
-**Core & Bean**
-
-- Provide fundamental Parts of the framework
-- Such as IoC and DI features
-- BeanFactory Interface is the entry point to the module
-- BeanFactory Interface is to read bean definitions and access them
 
 ## License 📝
 
