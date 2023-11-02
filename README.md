@@ -39,6 +39,14 @@ L'injection de dépendances est un modèle que nous pouvons utiliser pour implé
 L'inversion de contrôle est un principe du génie logiciel qui transfère le contrôle d'objets ou de parties d'un programme vers un conteneur ou un framework. On l'utilise le plus souvent dans le cadre de la programmation orientée objet.
 
 
+**Bean's scope:**
+
+
+En Java Spring, les beans peuvent avoir deux scopes différents : singleton et prototype.
+
+Singleton : Un bean singleton est créé une seule fois pour l'ensemble de l'application. Il est stocké dans le conteneur IoC et est renvoyé chaque fois qu'il est demandé.
+Prototype : Un bean prototype est créé à chaque fois qu'il est demandé. Il n'est pas stocké dans le conteneur IoC.
+Le choix du scope approprié dépend des besoins de l'application. En général, les beans singleton sont utilisés pour les objets qui doivent être partagés entre plusieurs composants de l'application. Les beans prototype sont utilisés pour les objets qui doivent être créés de manière unique pour chaque requête.
 
 
 
