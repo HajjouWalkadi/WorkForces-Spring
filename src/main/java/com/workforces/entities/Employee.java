@@ -1,9 +1,6 @@
-package org.example.workforce.entities;
+package com.workforces.entities;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Employee {
@@ -44,6 +41,16 @@ public class Employee {
     public void setSalaire(Double salaire) {
         this.salaire = salaire;
     }
+    public Departement getDepartement() {
+        return departement;
+    }
+
+    public void setDepartement(Departement departement) {
+        this.departement = departement;
+    }
+
+    @ManyToOne
+    private Departement departement;
 
     @Override
     public String toString() {
