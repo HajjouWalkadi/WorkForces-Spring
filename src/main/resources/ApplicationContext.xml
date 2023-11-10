@@ -38,7 +38,12 @@
     <context:component-scan base-package="com.workforces.repository">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Repository" />
     </context:component-scan>
-    <bean name="employeeService" class="work.force.service.Imp.EmployeeServiceImp">
+
+    <bean name="departementService" class="com.workforces.service.DepartementService">
+        <constructor-arg index="0" ref="departementRepository"/>
+    </bean>
+
+    <bean name="employeeService" class="com.workforces.service.EmployeeService">
         <constructor-arg index="0" ref="employeeRepository"/>
     </bean>
 </beans>
