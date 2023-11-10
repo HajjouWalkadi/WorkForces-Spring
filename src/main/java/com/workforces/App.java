@@ -7,6 +7,7 @@ import com.workforces.service.EmployeeService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+
 /**
  * Hello world!
  *
@@ -15,7 +16,7 @@ public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicaionContext.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
         Departement departement = applicationContext.getBean("departement", Departement.class);
         departement.setName("Architect");
         DepartementService departementService = applicationContext.getBean("departementService", DepartementService.class);
